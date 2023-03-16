@@ -1,0 +1,10 @@
+Enter in shell -> psql -U postgres/admin -h localhost
+ALTER USER postgres PASSWORD 'root';
+
+###TABLE###
+Table to null and primary key to zero -> TRUNCATE TABLE users RESTART IDENTITY;
+SELECT * FROM users;
+GRANT ALL PRIVILEGES ON DATABASE form TO postgres;
+CREATE DATABASE form
+CREATE USER admin WITH CREATEDB LOGIN ENCRYPTED PASSWORD 'root';
+Select database -> \c form
